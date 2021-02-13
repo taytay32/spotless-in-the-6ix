@@ -1,0 +1,1094 @@
+@import "globals";
+@import "navBar";
+@import "home";
+@import "aboutSpotless";
+@import "footer";
+@import "aboutMelan";
+@import "booking";
+@import "personalized";
+@import "standard";
+@import "oneOff";
+@import "airbnb";
+@import "addOns";
+@import "reviews";
+@import "faq";
+@import "aboutMobile";
+@import "servicesMobile";
+
+/*
+.p-div-main {
+  display: none;
+}
+*/
+
+.burger-menu,
+.menu-check {
+  display: none;
+}
+
+.about-mobile {
+  display: none;
+}
+
+.services-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.logo-header-mobile {
+  display: none;
+}
+
+.mobile-booking {
+  display: none;
+}
+
+.faq-mobile {
+  display: none;
+}
+
+.p-div-mobile {
+  display: none;
+}
+
+.p-div-ipad {
+  display: none;
+}
+/*
+@media screen and (min-width: 1150px) {
+  .dropdown-1 li {
+    position: relative;
+    right: 0vh;
+  }
+
+  
+}
+
+/*
+
+/*
+@media screen and (max-width: 851px) {
+  .about-nudge {
+    position: relative;
+    right: 0vh;
+  }
+
+  .dropdown-1 li {
+    position: relative;
+    right: 0vh;
+  }
+
+  .booking-nudge {
+    position: relative;
+    right: 0vh;
+  }
+}
+*/
+
+.cancel-text h4 {
+  font-size: var(--header4);
+}
+
+.cancel-text p {
+  font-size: var(--droptext);
+}
+
+@media screen and (max-width: 851px) {
+  /* Home Page + Burger */
+
+  .about-main {
+    display: none;
+  }
+
+  .services-main {
+    display: none;
+  }
+  .about-mobile {
+    display: block;
+  }
+
+  .services-mobile {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .logo-main {
+    display: none;
+  }
+
+  .logo-header-mobile {
+    display: block;
+  }
+
+  .mark-mobile-home {
+    max-height: 10vh;
+    position: absolute;
+    left: 44%;
+  }
+
+  .logo-mobile-home {
+    max-height: 10vh;
+    position: absolute;
+    left: 46%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger-menu span {
+    padding: 0.2rem 3rem;
+    background: var(--purple-text);
+    margin: 1rem 0;
+    display: block;
+  }
+
+  .burger-menu {
+    position: absolute;
+    right: 5%;
+    display: block;
+  }
+
+  .menu-check {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 4.5%;
+    transform: translate(5%, -50%);
+    z-index: 20;
+    width: 7rem;
+    height: 5rem;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  .menu-check:checked + .top-bar {
+    transform: translate(-100%);
+  }
+
+  .menu-check:checked ~ .burger-menu span {
+    background: var(--green-text);
+  }
+
+  /*
+  .menu-check:checked ~ .burger-menu span:nth-child(1) {
+    transform: rotateZ(45deg) translateY(600%);
+  }
+  .menu-check:checked ~ .burger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-check:checked ~ .burger-menu span:nth-child(3) {
+    transform: rotateZ(-45deg) translateY(-400%);
+  }
+  */
+
+  .top-bar {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url("/img/mobile-nav-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    width: 100%;
+    height: 93vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 1s ease;
+    padding-bottom: 5rem;
+  }
+
+  .spotless img {
+    width: 80%;
+  }
+
+  .top-bar a {
+    display: inline-block;
+    background: none;
+    font-size: calc(2.9rem + 1vw);
+    min-height: 3rem;
+    padding: 1rem;
+    transition: none;
+    font-weight: bold;
+  }
+
+  .logo-mob {
+    max-height: 18vh;
+  }
+
+  .about-nudge {
+    position: relative;
+    left: 0vh;
+  }
+
+  .booking-nudge {
+    position: relative;
+    right: 0vh;
+  }
+
+  .reviews-nudge {
+    position: relative;
+    left: 0vh;
+  }
+  /*
+  .dropdown-1 {
+    display: none;
+  }
+
+  .dropdown-2 {
+    display: none;
+  }
+
+  .dropdown-1 a {
+    color: var(--green-text);
+    font-size: calc(1.5rem + 1vh);
+    min-height: 10vh;
+  }
+
+  .dropdown-2 a {
+    color: var(--green-text);
+    font-size: calc(1.5rem + 1vh);
+    min-height: 10vh;
+    z-index: 3;
+  }
+  /*
+  .drop-nudge {
+    position: relative;
+    left: 4vh;
+  }
+  */
+
+  .para {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .para p {
+    font-size: calc(1rem + 0.8vh);
+  }
+
+  .p-div-main {
+    display: none;
+  }
+
+  .p-div-ipad {
+    display: flex;
+    padding: 0.2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.6)
+    );
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .p-div-ipad p {
+    font-size: calc(1.5rem + 0.8vh);
+    color: #5293bb;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .hours-of-operation {
+    bottom: 13rem;
+  }
+
+  .book-button {
+    font-size: calc(3rem + 1vw);
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 7.5;
+    z-index: 20;
+  }
+
+  .footer-wrapper h5 {
+    flex: 1;
+    font-size: 2rem;
+  }
+
+  .footer-wrapper ul {
+    justify-content: space-around;
+
+    flex: 1;
+    width: 10%;
+  }
+
+  .footer-wrapper p {
+    flex: 1;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: var(--header2ipad);
+  }
+
+  h3 {
+    font-size: var(--header3ipad);
+  }
+
+  h6 {
+    font-size: calc(1.25rem + 1vw);
+  }
+
+  /* About Mobile */
+
+  /* Services Mobile */
+
+  /* Melan */
+
+  .about-melan-container {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+
+  .melan-text {
+    flex: 1;
+    min-height: 82.5vh;
+  }
+
+  .melan-text p {
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    font-size: var(--ipadtext);
+  }
+
+  .melan-text a {
+    font-size: var(--ipadtext);
+    font-style: italic;
+    transition: none;
+  }
+
+  .melan-text h2 {
+    padding: 2rem;
+  }
+
+  /* Spotless */
+
+  .about {
+    min-height: 82.5vh;
+  }
+
+  .about-text-container p {
+    padding: 2rem 1.5rem;
+    font-size: var(--ipadtext);
+  }
+
+  .about-text-container h2 {
+    padding-bottom: 3rem;
+  }
+
+  .about-img-container {
+    min-height: 82.5vh;
+  }
+
+  /* Booking */
+  .main-booking {
+    display: none;
+  }
+  .mobile-booking {
+    display: block;
+  }
+  /* Cancel style*/
+
+  .cancel-text h4 {
+    font-size: var(--header3);
+  }
+
+  .cancel-text p {
+    font-size: calc(0.8rem + 1vw);
+  }
+
+  /* Standard */
+
+  .s-text {
+    text-align: center;
+  }
+
+  .s-text h6,
+  .s-text h3 {
+    padding-bottom: 3rem;
+  }
+
+  .s-text p {
+    font-size: var(--ipadtext);
+  }
+  .s-p a {
+    font-size: var(--ipadtext);
+  }
+
+  /* Add-ons */
+  .add-text p {
+    font-size: var(--ipadtext);
+  }
+
+  .add-text h3 {
+    margin-top: 2rem;
+  }
+
+  #disclaimer {
+    color: var(--green-text);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  /* Personalized */
+  .p-text {
+    text-align: center;
+  }
+
+  .p-text h2 {
+    padding-bottom: 2rem;
+  }
+
+  .p-text p {
+    font-size: var(--ipadtext);
+    padding: 1rem;
+  }
+
+  .p-p a {
+    font-size: var(--ipadtext);
+  }
+
+  /* One-off */
+
+  .o-text h2 {
+    margin: 2rem;
+  }
+
+  .o-text p {
+    font-size: var(--ipadtext);
+    padding: 0.75rem;
+  }
+
+  .o-text h3 {
+    padding-bottom: 0;
+  }
+
+  .o-p a {
+    font-size: var(--ipadtext);
+  }
+
+  /* AIRBNB MOVING */
+
+  .a-wrapper {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("/img/Airbnb-background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: 0% 40%;
+  }
+
+  .a-p p {
+    font-size: var(--ipadtext);
+    padding: 0.25rem 2rem;
+  }
+
+  .a-text h3 {
+    padding: 0;
+  }
+
+  .a-text h2 {
+    padding-bottom: 2rem;
+  }
+
+  /* reviews */
+
+  .reviews-title h2 {
+    text-align: center;
+  }
+
+  .quote-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .quote-wrapper img {
+    width: 5%;
+    margin-bottom: 0rem;
+  }
+  .quote-wrapper div {
+    margin: 0.5rem;
+  }
+
+  .quote-wrapper p {
+    font-size: var(--ipadtext);
+  }
+
+  .quote-1 {
+    flex: 1 1 0rem;
+  }
+  .quote-2 {
+    flex: 1 1 0rem;
+  }
+  .quote-3 {
+    flex: 1 1 0rem;
+  }
+
+  /*faq*/
+  .faq-wrapper div {
+    padding: 0.75rem;
+  }
+  .faq-main {
+    display: none;
+  }
+
+  .faq-mobile {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .faq-text {
+    width: 90%;
+  }
+  .faq-text h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .faq-text a,
+  .faq-text h4,
+  .faq-text p {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Home Page + Burger */
+
+  .p-div-ipad {
+    display: none;
+  }
+
+  nav a:hover {
+    color: #91cdcb;
+  }
+
+  .about-main {
+    display: none;
+  }
+
+  .services-main {
+    display: none;
+  }
+  .about-mobile {
+    display: block;
+  }
+
+  .services-mobile {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .logo-main {
+    display: none;
+  }
+
+  .logo-header-mobile {
+    display: block;
+  }
+
+  .p-div-main {
+    display: none;
+  }
+  .mark-mobile-home {
+    max-height: 10vh;
+    position: absolute;
+    left: 41.5%;
+  }
+
+  .logo-mobile-home {
+    max-height: 10vh;
+    position: absolute;
+    left: 44%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger-menu span {
+    padding: 0.2rem 2rem;
+    background: var(--purple-text);
+    margin: 0.5rem 0;
+    display: block;
+  }
+
+  .burger-menu {
+    position: absolute;
+    right: 5%;
+    display: block;
+  }
+
+  .menu-check {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 4.5%;
+    transform: translate(5%, -50%);
+    z-index: 20;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  .menu-check:checked + .top-bar {
+    transform: translate(-100%);
+  }
+
+  .menu-check:checked ~ .burger-menu span {
+    background: var(--green-text);
+  }
+
+  .menu-check:checked ~ .burger-menu span:nth-child(1) {
+    transform: rotateZ(45deg) translateY(340%);
+  }
+  .menu-check:checked ~ .burger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-check:checked ~ .burger-menu span:nth-child(3) {
+    transform: rotateZ(-45deg) translateY(-300%);
+  }
+
+  .menu-check:checked .footer-wrapper {
+    display: none;
+  }
+
+  .top-bar {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url("/img/mobile-nav-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75%;
+    width: 100%;
+    height: 93vh;
+    position: fixed;
+
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+
+    transition: transform 1s ease;
+    padding-bottom: 5.5rem;
+    justify-content: flex-start;
+  }
+
+  .top-bar a {
+    display: inline-block;
+    background: none;
+    font-size: 2.5rem;
+    min-height: 3rem;
+    padding: 0.75rem;
+  }
+
+  .margin-top {
+    margin-top: 2rem;
+  }
+
+  .logo-mob {
+    max-height: 15vh;
+  }
+
+  /*
+  .about-nudge {
+    position: relative;
+    left: 0vh;
+  }
+
+  .booking-nudge {
+    position: relative;
+    right: 0vh;
+  }
+
+  .reviews-nudge {
+    position: relative;
+    left: 0vh;
+  }
+
+  .dropdown-1 {
+    display: none;
+  }
+
+  .dropdown-2 {
+    display: none;
+  }
+
+  .dropdown-1 a {
+    color: var(--green-text);
+    font-size: calc(1.5rem + 1vh);
+    min-height: 10vh;
+  }
+
+  .dropdown-2 a {
+    color: var(--green-text);
+    font-size: calc(1.5rem + 1vh);
+    min-height: 10vh;
+    z-index: 3;
+  }
+
+  .drop-nudge {
+    position: relative;
+    left: 4vh;
+  }
+*/
+
+  .para p {
+    font-size: var(--mobiletext);
+  }
+
+  .para {
+    margin-top: 1rem;
+    padding: 0.25rem;
+  }
+
+  .p-div-mobile {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.6)
+    );
+    padding: 0.2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
+  }
+
+  .p-div-mobile p {
+    font-size: calc(1.25rem + 1vw);
+    color: #5293bb;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .book-button {
+    /* font-size: var(--button);*/
+    font-size: var(--header1);
+
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 7.5;
+    z-index: 20;
+  }
+
+  .footer-wrapper h5 {
+    flex: 12;
+    font-size: 1.25rem;
+  }
+
+  .footer-wrapper ul {
+    justify-content: space-around;
+
+    flex: 9;
+    width: 10%;
+  }
+
+  .footer-wrapper p {
+    flex: 11;
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: var(--header2mobile);
+  }
+
+  /* About Mobile */
+  .about-mobile-wrapper ul {
+    padding-bottom: 10rem;
+  }
+  .about-mobile-wrapper {
+    background-position: 23%;
+  }
+
+  /* Services Mobile */
+
+  .services-mobile-wrapper ul {
+    padding-bottom: 10rem;
+  }
+
+  .services-mobile-wrapper a {
+    font-size: 2.5rem;
+  }
+
+  /* Melan */
+
+  .about-melan-container {
+    flex-direction: column-reverse;
+  }
+
+  .melan-text {
+    flex: 1;
+    min-height: 82.5vh;
+  }
+
+  .melan-text p {
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    font-size: var(--mobiletext);
+  }
+
+  .melan-text a {
+    font-size: var(--mobiletext);
+  }
+
+  /* Spotless */
+
+  .about {
+    min-height: 82.5vh;
+  }
+
+  .about-text-container p {
+    padding: 2rem 1.5rem;
+    font-size: var(--mobiletext);
+  }
+
+  .about-text-container h2 {
+    padding-bottom: 0rem;
+  }
+
+  .about-img-container {
+    min-height: 82.5vh;
+  }
+
+  /* Booking */
+  .main-booking {
+    display: none;
+  }
+  .mobile-booking {
+    display: block;
+  }
+
+  /* Standard */
+
+  .s-text {
+    text-align: center;
+
+    justify-content: start;
+    padding-top: 1rem;
+  }
+
+  .s-text h2,
+  .s-text h3 {
+    padding-bottom: 0rem;
+  }
+
+  .s-text h6 {
+    padding-bottom: 0.5rem;
+  }
+
+  .s-text p {
+    font-size: var(--mobiletext);
+  }
+
+  .s-p a {
+    font-size: var(--mobiletext);
+  }
+
+  /* Addons */
+  .add-text {
+    justify-content: start;
+    padding-top: 1rem;
+  }
+  .add-text-p p {
+    font-size: var(--mobiletext);
+  }
+
+  #disclaimer {
+    padding: 0 2rem;
+  }
+
+  /* Personalized */
+  .p-text {
+    text-align: center;
+    justify-content: start;
+    padding-top: 1rem;
+  }
+
+  .p-text h2 {
+    padding-bottom: 2rem;
+    line-height: 1;
+  }
+
+  .p-text h3 {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  .p-text p {
+    font-size: var(--mobiletext);
+    line-height: 1.4;
+    padding: 0.5rem 1.75rem;
+  }
+
+  .p-p a {
+    font-size: var(--mobiletext);
+  }
+
+  .p-p {
+    padding-top: 0;
+  }
+
+  /* One-off */
+
+  .o-text {
+    justify-content: start;
+    padding-top: 1rem;
+  }
+
+  .o-text h2 {
+    font-size: calc(3rem + 1vw);
+    margin: 1rem;
+  }
+
+  .o-text p {
+    font-size: var(--mobiletext);
+    padding: 0.3rem;
+  }
+
+  .o-text h3 {
+    padding-bottom: 0;
+  }
+
+  .o-p a {
+    font-size: var(--mobiletext);
+  }
+
+  /* AIRBNB MOVING */
+
+  .a-wrapper {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("/img/Airbnb-background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: 0% 40%;
+  }
+
+  .a-text {
+    justify-content: start;
+    padding-top: 1rem;
+  }
+  .a-p {
+    padding-bottom: 1rem;
+  }
+  .a-p p {
+    font-size: var(--mobiletext);
+  }
+
+  .a-text h3 {
+    padding: 0;
+  }
+
+  .a-text h2 {
+    padding-bottom: 1rem;
+  }
+
+  .a-cancel-text h4 {
+    font-size: 1.5rem;
+  }
+
+  /* reviews */
+  .reviews-title h2 {
+    text-align: center;
+  }
+
+  .quote-wrapper {
+    flex-direction: column;
+  }
+
+  .quote-wrapper h3 {
+    font-size: var(--header3ipad);
+  }
+
+  .quote-wrapper img {
+    width: 5%;
+    margin-bottom: 0rem;
+  }
+  .quote-wrapper div {
+    margin: 0.5rem;
+  }
+
+  .quote-wrapper p {
+    font-weight: bold;
+    font-size: var(--mobiletext);
+  }
+
+  .quote-1 {
+    flex: 1 1 0rem;
+  }
+  .quote-2 {
+    flex: 1 1 0rem;
+  }
+  .quote-3 {
+    flex: 1 1 0rem;
+  }
+
+  /*faq*/
+
+  .faq-main {
+    display: none;
+  }
+
+  .faq-mobile {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .faq-text a,
+  .faq-text h4,
+  .faq-text p {
+    font-size: var(--mobiletext);
+  }
+
+  .faq-text p {
+    padding-bottom: 1rem;
+  }
+}
+/*
+@media screen and (min-width: 700px) {
+  .services-mobile-wrapper a,
+  .about-mobile-wrapper a,
+  font-size: var(--header2);
+  }
+  .about-mobile-logo,
+  .services-mobile-logo {
+    width: 50%;
+  }
+}
+*/

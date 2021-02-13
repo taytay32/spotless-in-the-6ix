@@ -1,0 +1,98 @@
+.add-wrapper {
+  min-height: 70.5vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("/img/personalized-clean-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 26%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-text h2 {
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.add-text h3 {
+  font-weight: bold;
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.add-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 20;
+}
+
+.add-text p {
+  color: #45499e;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.add-text-p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.add-text a {
+  font-style: italic;
+  color: #4a9996;
+  transition: all 0.5s ease 0s;
+}
+
+.add-text a:hover {
+  color: #7294f1;
+}
+
+.cancel-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.cancel-text p {
+  font-size: 1.5rem;
+}
+
+.p-book-button {
+  min-height: 7.5vh;
+  min-width: 100%;
+  cursor: pointer;
+  background: rgb(177, 177, 177);
+  transition: all 0.3s ease 0s;
+  border: 2px solid rgb(49, 44, 44);
+  color: white;
+  z-index: 2;
+  font-size: 4rem;
+}
+
+.p-book-button:hover {
+  color: #84dad7;
+  border: 3px solid #808ae0;
+}
+
+.o-p a {
+  font-style: italic;
+  color: #4a9996;
+  transition: all 0.5s ease 0s;
+}
+
+.o-p a:hover {
+  color: #7294f1;
+}

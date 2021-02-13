@@ -1,0 +1,165 @@
+.main-head {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background: #f3f3f3;
+  min-height: 10vh;
+}
+.logo {
+  max-height: 10vh;
+}
+
+.top-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  min-height: 10vh;
+  transition: all 0.3s ease 0s;
+}
+nav a:hover {
+  color: #91cdcb;
+}
+
+.dropdown-1 a {
+  min-height: 5vh;
+  font-size: var(--droptext);
+  padding: 0.5rem 0rem;
+}
+
+.dropdown-2 a {
+  min-height: 5vh;
+  font-size: var(--droptext);
+  padding: 0.5rem 0rem;
+}
+
+/*
+  . a {
+    min-height: 5vh;
+    font-size: 1.5rem;
+  }
+  
+  */
+
+nav ul {
+  display: flex;
+}
+
+.about-main {
+  position: relative;
+  right: 4vh;
+}
+
+.booking-nudge {
+  position: relative;
+  right: 3vh;
+}
+
+.reviews-nudge {
+  position: relative;
+  left: 1vh;
+}
+
+nav ul li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+nav li:hover .dropdown-1 > li {
+  top: 0;
+  display: block;
+}
+
+.dropdown-1 li {
+  display: none;
+}
+
+.dropdown-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav li:hover > .dropdown-1 {
+  perspective: 100rem;
+}
+
+nav li:hover > .dropdown-1 li {
+  transform-origin: top center;
+  opacity: 0;
+}
+
+nav li:hover > .dropdown-1 li:nth-child(1) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: -100ms;
+}
+
+nav li:hover > .dropdown-1 li:nth-child(2) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+
+nav li:hover .dropdown-2 > li {
+  top: 0;
+  display: block;
+}
+
+.dropdown-2 li {
+  display: none;
+  position: relative;
+  right: 0vh;
+}
+
+.dropdown-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav li:hover > .dropdown-2 {
+  perspective: 100rem;
+}
+
+nav li:hover > .dropdown-2 li {
+  transform-origin: top center;
+  opacity: 0;
+}
+
+nav li:hover > .dropdown-2 li:nth-child(1) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: -100ms;
+}
+
+nav li:hover > .dropdown-2 li:nth-child(2) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+
+nav li:hover > .dropdown-2 li:nth-child(3) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 100ms;
+}
+
+nav li:hover > .dropdown-2 li:nth-child(4) {
+  animation: animate 300ms ease-in-out forwards;
+  animation-delay: 200ms;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotatex(-90deg);
+  }
+  50% {
+    transform: rotatex(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotatex(0deg);
+  }
+}

@@ -1,0 +1,70 @@
+.s-wrapper {
+  min-height: 70.5vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/img/stand-clean-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 20;
+}
+
+.cancel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.s-text h2,
+.s-text h6 {
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.s-text h3 {
+  font-weight: bold;
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.s-text p {
+  color: #45499e;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+.s-p a {
+  font-style: italic;
+  color: #4a9996;
+  transition: all 0.5s ease 0s;
+}
+
+.s-p a:hover {
+  color: #7294f1;
+}
+
+.s-p {
+  text-align: center;
+  margin-top: 1.5rem;
+}

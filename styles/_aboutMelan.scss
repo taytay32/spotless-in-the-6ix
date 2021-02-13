@@ -1,0 +1,54 @@
+.about-melan-container {
+  min-height: 82.5vh;
+  display: flex;
+  background: #c9b9a00e;
+  flex-wrap: wrap;
+}
+
+.melan-pic {
+  flex: 1 1 40rem;
+  max-height: 82.5vh;
+}
+
+.melan-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.melan-text {
+  flex: 4 1 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.melan-text h2 {
+  background: linear-gradient(to right, #72cfcc, #74a3c0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding-top: 1rem;
+  /*
+  color: rgb(180, 180, 180);*/
+}
+
+.melan-text p {
+  padding: 1rem;
+  padding-right: 2rem;
+  /* color: #808ae0; */
+  color: #7679ab;
+  text-align: center;
+}
+
+.melan-text a {
+  font-style: italic;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+.melan-text a:hover {
+  color: var(--green-text);
+}

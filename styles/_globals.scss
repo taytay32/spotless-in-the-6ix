@@ -1,0 +1,67 @@
+/* globals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(2.5rem + 1vw);
+  --header2ipad: calc(4rem + 1vw);
+  --header2mobile: calc(2.75rem + 1vw);
+  --header3: calc(1.5rem + 1vw);
+  --header3ipad: calc(1.75rem + 1vw);
+  --header4: calc(0.9rem + 0.7vw);
+  --button: calc(2.5rem + 1vw);
+  --text: calc(0.5rem + 1vw);
+  --droptext: calc(0.5rem + 0.75vw);
+  --mobiletext: calc(1.15rem + 1vw);
+  --ipadtext: calc(1.5rem + 1vw);
+  --small: calc(1rem + 0.5vw);
+  --big: calc(6rem + 1vw);
+  --purple-text: #45499e;
+  --green-text: #74a3c0;
+  --grey: #f3f3f3;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /*background: #ebebeb;*/
+}
+
+h2 {
+  font-weight: bold;
+  font-size: var(--header2);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: var(--header3);
+}
+h4 {
+  font-weight: bold;
+  font-size: var(--header4);
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #45499e;
+  font-size: var(--text);
+}

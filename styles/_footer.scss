@@ -1,0 +1,45 @@
+.footer-wrapper h5 {
+  font-size: var(--text);
+  font-weight: normal;
+  color: #45499e;
+}
+
+footer {
+  background: #f3f3f3;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-wrapper p {
+  color: #45499e;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+
+  min-height: 7vh;
+}
+
+.footer-wrapper h5 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-wrapper ul {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-wrapper ul li {
+  justify-content: center;
+}
+
+.footer-wrapper img {
+  height: 3vh;
+}
+.footer-wrapper p {
+  flex: 1;
+  text-align: center;
+}

@@ -1,0 +1,85 @@
+.p-wrapper {
+  min-height: 70.5vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("/img/personalized-clean-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 26%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-text h2 {
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.p-text h3 {
+  font-weight: bold;
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.p-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 20;
+}
+
+.p-p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.p-text p {
+  color: #45499e;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+.p-text a {
+  font-style: italic;
+  color: #4a9996;
+  transition: all 0.5s ease 0s;
+}
+
+.p-text a:hover {
+  color: #7294f1;
+}
+
+.cancel-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.p-book-button {
+  min-height: 7.5vh;
+  min-width: 100%;
+  cursor: pointer;
+  background: rgb(177, 177, 177);
+  transition: all 0.3s ease 0s;
+  border: 2px solid rgb(49, 44, 44);
+  color: white;
+  z-index: 2;
+  font-size: 4rem;
+}
+
+.p-book-button:hover {
+  color: #84dad7;
+  border: 3px solid #808ae0;
+}

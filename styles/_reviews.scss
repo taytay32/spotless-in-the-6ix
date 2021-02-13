@@ -1,0 +1,69 @@
+.review-section {
+  min-height: 75.5vh;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/img/reviews-back-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex: 2;
+  margin: 0 2rem;
+}
+
+.quote-wrapper div {
+  margin: 2rem;
+}
+
+.quote-wrapper img {
+  width: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.quote-1 {
+  flex: 1 1 40rem;
+}
+.quote-2 {
+  flex: 1 1 40rem;
+}
+.quote-3 {
+  flex: 1 1 40rem;
+}
+
+.quote-wrapper h3 {
+  font-weight: bold;
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.reviews-title h2 {
+  font-weight: bold;
+  background: linear-gradient(to right, #67aaa8, #43708b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.quote-wrapper p {
+  color: #45499e;
+}
